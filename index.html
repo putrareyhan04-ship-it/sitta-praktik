@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Login SITTA</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="login-container">
+    <img src="assets/logo ut.png" alt="Logo UT" class="logo-ut">
+    <h2>SITTA </h2>
+    <h2>Universitas Terbuka </h2>
+
+    <form id="loginForm">
+      <input type="email" id="email" placeholder="Email" required><br>
+      <input type="password" id="password" placeholder="Password" required><br>
+      <a href="#" id="forgotBtn">Lupa password?</a><br><br>
+      <button type="submit" class="btn">Masuk</button>
+      <p>Belum punya akun? <a href="#" id="registerBtn">Daftar</a></p>
+    </form>
+  </div>
+
+  <!-- Modal Lupa Password -->
+  <div id="forgotModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Lupa Password</h3>
+      <p>Silakan hubungi admin UT daerah untuk reset password.</p>
+    </div>
+  </div>
+
+  <!-- Modal Daftar -->
+  <div id="registerModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Form Pendaftaran</h3>
+      <input type="text" placeholder="Nama Lengkap">
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <button class="btn">Daftar</button>
+    </div>
+  </div>
+
+  <!-- Perbaikan script -->
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
