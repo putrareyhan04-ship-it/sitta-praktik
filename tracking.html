@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Tracking Pengiriman</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="tracking.html">Tracking</a>
+      <a href="stok.html">Informasi Bahan Ajar</a>
+      <a href="#">Laporan</a>
+      <a href="#">History Transaksi</a>
+    </div>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </nav>
+
+  <div class="tracking-container">
+    <h2>Tracking Pengiriman Bahan Ajar</h2>
+
+    <form id="trackingForm" class="tracking-form">
+      <input type="text" id="noDO" placeholder="Nomor Delivery Order" required>
+      <button type="submit" class="btn">Cari</button>
+    </form>
+
+    <div id="trackingResult"></div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informasi Stok Bahan Ajar</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Material Icons (jaga konsistensi desain) -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="tracking.html">Tracking</a>
+      <a href="stok.html" class="active">Informasi Bahan Ajar</a>
+      <a href="#">Laporan</a>
+      <a href="#">History Transaksi</a>
+    </div>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </nav>
+
+  <!-- Konten Stok -->
+  <div class="stok-container">
+    <h2>Informasi Stok Bahan Ajar</h2>
+
+    <div class="stok-table-wrapper">
+      <table id="stokTable">
+        <thead>
+          <tr>
+            <th>Kode Lokasi</th>
+            <th>Kode Barang</th>
+            <th>Nama Bahan Ajar</th>
+            <th>Jenis</th>
+            <th>Edisi</th>
+            <th>Stok</th>
+            <th>Cover</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data stok akan diisi melalui script.js -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="stok-actions">
+      <button id="addRowBtn" class="btn">Tambah Stok Baru</button>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
